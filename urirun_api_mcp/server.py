@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 PROTOCOL_VERSION = "2024-11-05"
-SERVER_INFO = {"name": "urirun-api-mcp", "version": "0.1.0"}
+SERVER_INFO = {"name": "urirun-connector-mcp", "version": "0.2.0"}
 
 
 def runtime_url() -> str:

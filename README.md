@@ -1,6 +1,8 @@
-# urirun-api-mcp
+# urirun-connector-mcp
 
-Thin MCP adapter for `urirun` based on the live runtime registry exposed by `urirun` and the LLM-facing conventions from `urirun-llm-runtime`.
+Thin MCP connector for `urirun` based on the live runtime registry exposed by `urirun` and the LLM-facing conventions from `urirun-llm-runtime`.
+
+The import path `urirun_api_mcp` and command `urirun-api-mcp` remain available for backward compatibility. New integrations should use `urirun-connector-mcp`.
 
 ## Purpose
 
@@ -26,7 +28,7 @@ Key variables:
 ```bash
 cp .env.example .env
 pip install -e .
-python -m urirun_api_mcp.server
+urirun-connector-mcp
 ```
 
 The process speaks line-delimited JSON-RPC 2.0 over stdio and implements:
